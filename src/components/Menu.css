@@ -1,0 +1,6 @@
+.menu-icons{
+    display: inline-flex;
+}
+.menu-icons button{
+    border-style:  none;
+}
