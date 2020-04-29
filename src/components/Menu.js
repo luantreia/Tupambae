@@ -26,7 +26,7 @@ function Menu() {
                 >
                     search
                 </button>
-                <h1>'Page'</h1>
+                <h1>{Page}</h1>
             </div>
         </div>
     );
