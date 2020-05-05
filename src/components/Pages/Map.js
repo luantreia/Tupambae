@@ -3,18 +3,7 @@ import { Map, TileLayer } from 'react-leaflet';
 import L from 'leaflet';
 import Page from '../Menu';
 
-const styles = {
-    wrapper: { 
-      height:  '100%',
-      width: '100%',
-      display: 'flex'
-    },
-    map: {
-      flex: 1
-    } 
-  };
-  
-  const Moves = props => {
+  const Mapa () => {
   return (
     <div style={styles.wrapper}>
       <Map style={styles.map} center={props.center} zoom={props.zoom}>
