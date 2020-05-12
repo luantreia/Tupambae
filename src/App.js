@@ -1,16 +1,24 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import Menu from './components/Menu';
-import Moves from './components/Pages/Map';
+import Map from './components/Pages/Map';
+import Search from './components/Pages/Search';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 function App() {
-var Pag 
   return (
-    <div className="App">
+    <Router>
+      <div className="App">
         <Menu/>
-        <Moves/>
-    </div>
+        <Switch>
+          <Route path="/Map" component={Map}/>
+          <Route path="/Search" component={Search}/>
+        </Switch>
+      </div>
+    </Router>
+
+    
+        
   );
   
 }

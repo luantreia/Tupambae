@@ -1,37 +1,29 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import './Menu.css';
-import App from '../App';
+import { Link } from 'react-router-dom';
 
 function Menu() {
-    const [Page, setPage] = useState('Map');
-
-    useEffect(() => {
-        
-    })
-
     return (
-        <div>
-            <div className="w3-display-bottommiddle">
-                <div className="menu-icons w3-card w3-margin">
-                    <button 
-                        className="material-icons w3-padding" 
-                        onClick= {() => setPage('Map')}
-                        >
-                        map
-                    </button>
-                    <button 
-                        className="material-icons w3-padding"
-                        onClick= {() => setPage('Account')}
-                        >
-                        account_circle
-                    </button>
-                    <button 
-                        className="material-icons w3-padding"
-                        onClick= {() => setPage('Search')}
-                        >
-                        search
-                    </button>
-                </div>
+        <div className="w3-display-bottommiddle">
+            <div className="menu-icons material-icons w3-card w3-margin">
+                <Link
+                    className="menu__link"
+                    to='/map'
+                >
+                    map
+                    </Link>
+                <Link
+                    className="menu__link"
+                    to='/account'
+                >
+                    account_circle
+                    </Link>
+                <Link
+                    className="menu__link"
+                    to='/search'
+                >
+                    search
+                    </Link>
             </div>
         </div>
     );
